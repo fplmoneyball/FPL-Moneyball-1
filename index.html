@@ -7,61 +7,72 @@
     <style>
         body {
             display: flex;
-            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
             background-color: #ffffff;
             font-family: Arial, sans-serif;
             margin: 0;
-            overflow: hidden;
-            position: relative;
-            color: #333;
+            padding: 0;
         }
-        .coming-soon {
-            text-align: center;
-            z-index: 1;
+        .container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            max-width: 1200px;
+            width: 100%;
+            padding: 20px;
         }
-        .coming-soon h1 {
-            font-size: 3em;
-            margin-bottom: 0.5em;
+        .left-content {
+            flex: 1;
+            text-align: left;
+            padding-right: 20px;
         }
-        .coming-soon p {
-            font-size: 1.5em;
+        .left-content img {
+            width: 150px; /* Adjust the logo width as needed */
+            margin-bottom: 20px;
+        }
+        .left-content h1 {
+            font-size: 2.5em;
+            margin: 0;
+            color: #1a1a1a;
+        }
+        .left-content h2 {
+            font-size: 2em;
+            margin: 0;
+            background: linear-gradient(135deg, #B111D9, #17A4D0);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            color: transparent;
+        }
+        .left-content p {
+            font-size: 1.2em;
             color: #666;
-            margin-bottom: 1em;
+            margin-top: 10px;
         }
-        .logo {
-            width: 150px; /* Adjust the width as needed */
-            margin-bottom: 1em;
+        .right-content {
+            flex: 1;
+            text-align: center;
         }
-        .circle1, .circle2 {
-            position: absolute;
+        .right-content img {
+            width: 100%;
+            max-width: 600px; /* Adjust the image size as needed */
             border-radius: 50%;
-            background: radial-gradient(circle, rgba(177, 17, 217, 0.5), rgba(23, 164, 208, 0.5));
-            z-index: 0;
-        }
-        .circle1 {
-            width: 300px;
-            height: 300px;
-            top: 100px;
-            left: -100px;
-        }
-        .circle2 {
-            width: 300px;
-            height: 300px;
-            bottom: -100px;
-            right: -100px;
         }
     </style>
 </head>
 <body>
-    <div class="circle1"></div>
-    <div class="circle2"></div>
-    <div class="coming-soon">
-        <img src="finalnewfpls-01.jpg" alt="FPL Moneyball Logo" class="logo">
-        <h1>Great things coming soon.</h1>
-        <p>This website is currently under construction, exciting times ahead.</p>
+    <div class="container">
+        <div class="left-content">
+            <img src="finalnewfpls-01.jpg" alt="FPL Moneyball Logo">
+            <h1>New Website</h1>
+            <h2>Coming Soon</h2>
+            <p>Our website is currently under construction, extremely exciting times ahead!</p>
+        </div>
+        <div class="right-content">
+            <img src="FPL_Background.jpg" alt="FPL Background">
+        </div>
     </div>
 </body>
 </html>
