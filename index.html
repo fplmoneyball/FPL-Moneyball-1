@@ -7,6 +7,7 @@
     <style>
         body {
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
@@ -14,65 +15,44 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            text-align: center;
         }
-        .container {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            max-width: 1200px;
-            width: 100%;
-            padding: 20px;
-        }
-        .left-content {
-            flex: 1;
-            text-align: left;
-            padding-right: 20px;
-        }
-        .left-content img {
-            width: 150px; /* Adjust the logo width as needed */
+        .logo {
+            width: 200px; /* Adjust the logo size as needed */
             margin-bottom: 20px;
         }
-        .left-content h1 {
-            font-size: 2.5em;
+        .content {
+            max-width: 800px;
+            padding: 20px;
+        }
+        .content h1 {
+            font-size: 3em; /* Bigger font size for "New Website" */
             margin: 0;
             color: #1a1a1a;
         }
-        .left-content h2 {
-            font-size: 2em;
+        .content h2 {
+            font-size: 3em; /* Bigger font size for "Coming Soon" */
             margin: 0;
-            background: linear-gradient(135deg, #B111D9, #17A4D0);
+            background: linear-gradient(to right, #B111D9, #17A4D0);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
             color: transparent;
         }
-        .left-content p {
+        .content p {
             font-size: 1.2em;
             color: #666;
             margin-top: 10px;
         }
-        .right-content {
-            flex: 1;
-            text-align: center;
-        }
-        .right-content img {
-            width: 100%;
-            max-width: 600px; /* Adjust the image size as needed */
-            border-radius: 50%;
-        }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="left-content">
-            <img src="finalnewfpls-01.jpg" alt="FPL Moneyball Logo">
-            <h1>New Website</h1>
-            <h2>Coming Soon</h2>
-            <p>Our website is currently under construction, extremely exciting times ahead!</p>
-        </div>
-        <div class="right-content">
-            <img src="FPL_Background.jpg" alt="FPL Background">
-        </div>
+    <img src="finalnewfpls-01.jpg" alt="FPL Moneyball Logo" class="logo">
+    <div class="content">
+        <h1>New Website</h1>
+        <h2>Coming Soon</h2>
+        <p>Our website is currently under construction, extremely exciting times ahead!</p>
     </div>
 </body>
 </html>
+
