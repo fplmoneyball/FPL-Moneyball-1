@@ -19,24 +19,22 @@
             position: relative;
         }
         .logo {
-            width: 500px; /* Adjust the logo size as needed */
             position: absolute;
-            top: 10px;
-            left: 20px; /* Move the logo to the left-hand side */
+            top: 20px;
+            left: 20px;
         }
         .content {
             max-width: 800px;
             padding: 20px;
-            margin-top: 100px; /* Adjust to position the text correctly */
             text-align: center;
         }
         .content h1 {
-            font-size: 6.5em; /* Bigger font size for "New Website" */
+            font-size: 7.0em; /* Bigger font size for "New Website" */
             margin: 0;
             color: #1a1a1a;
         }
         .content h2 {
-            font-size: 6.5em; /* Bigger font size for "Coming Soon" */
+            font-size: 7.0em; /* Bigger font size for "Coming Soon" */
             margin: 0;
             background: linear-gradient(to right, #B111D9, #17A4D0);
             -webkit-background-clip: text;
@@ -48,6 +46,51 @@
             font-size: 1.5em; /* Increase font size */
             color: #666;
             margin-top: 10px;
+        }
+
+        /* Desktop styles */
+        @media (min-width: 1024px) {
+            .logo {
+                width: 400px;
+                top: 5px;
+                left: 20px;
+            }
+            .content {
+                margin-top: 10px;
+            }
+        }
+
+        /* Tablet styles */
+        @media (min-width: 768px) and (max-width: 1023px) {
+            .logo {
+                width: 300px;
+                top: 20px;
+                left: 20px;
+            }
+            .content {
+                margin-top: 150px;
+            }
+        }
+
+        /* Mobile styles */
+        @media (max-width: 767px) {
+            .logo {
+                width: 220px;
+                top: 5px;
+                left: 5px;
+            }
+            .content {
+                margin-top: 30px;
+            }
+            .content h1 {
+                font-size: 4.0em;
+            }
+            .content h2 {
+                font-size: 4.0em;
+            }
+            .content p {
+                font-size: 1.2em;
+            }
         }
     </style>
 </head>
